@@ -1,0 +1,12 @@
+<h1>PhoneBook-Angular</h1>
+
+<p>{{message | json}}</p>
+
+<input placeholder="User" name="user" [(ngModel)]="user"  >
+<input type="password" placeholder="password" name="password" [(ngModel)]="password">
+<input type="button" value="Login" (click)="login()">
+<input type="button" value="Logout" (click)="logout()">
+
+
+<p *ngFor="let person of persons">{{person.id}} {{person.name}} {{person.number}}</p>
+
